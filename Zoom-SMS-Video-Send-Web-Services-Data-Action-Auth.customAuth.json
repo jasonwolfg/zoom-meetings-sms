@@ -1,0 +1,41 @@
+{
+  "name": "GC -> Zoom SMS Video Send Web Services Data Action (Auth) - Exported 2022-05-16 @ 16:39",
+  "integrationType": "custom-rest-actions",
+  "actionType": "customAuth",
+  "config": {
+    "request": {
+      "requestUrlTemplate": "https://zoom.us/oauth/token",
+      "requestType": "POST",
+      "headers": {
+        "Authorization": "Basic $encoding.base64(\"${credentials.client_id}:${credentials.client_secret}\")",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "requestTemplate": "grant_type=client_credentials"
+    },
+    "response": {
+      "translationMap": {},
+      "translationMapDefaults": {},
+      "successTemplate": "${rawResult}"
+    }
+  },
+  "contract": {
+    "input": {
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "Auth Input",
+        "description": "No Input Value",
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "output": {
+      "successSchema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      }
+    }
+  },
+  "secure": false
+}
