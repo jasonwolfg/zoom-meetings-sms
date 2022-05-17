@@ -128,7 +128,7 @@ To enable communication from Genesys Cloud to Zoom, you must add a web services 
    ![Custom Auth data action associated with web services data actions integration](images/1ECustomAuthDataAction.png "Open the custom auth data action associated with web services data action")
 
    1. At the bottom of the Custom Auth data action page, click **Viewing** to change the status of the data action from **Published** to **Draft**.
-   2. Download the auth data action file *Zoom-SMS-Video-Send-Web-Services-Data-Action-Auth.customAuth.json* from the [zoom-meetings-blueprint](https://github.com/jasonwolfg/zoom-zoom-blueprint "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.
+   2. Download the auth data action file *Zoom-SMS-Video-Send-Web-Services-Data-Action-Auth.customAuth.json* from the [zoom-meetings-blueprint](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.
    3. Click **Import** and browse to select the downloaded file.
 
       ![Import authentication data action file](images/1FOpenCustomAuthDataAction.png "Import the custom authentication data action file")
