@@ -74,25 +74,18 @@ To enable the Genesys Cloud instance to authenticate and retrieve user informati
 
    ![New registration for an Zoom app](images/ZoomBuildApp.png "Build Zoom App")
 
-3. Within the **OAuth** box, click **Create**
+3. Within the **JWT** box, click **Create**
 
-   ![Select Oauth](images/ZoomSelectOAuth.png "Select OAauth")
+   ![Select JWT](images/ZoomSelectJWT.png "Select JWT")
 
 4. Give your app a name, define the app type and toggle off Zoom App Marketplace publishing and click **Create**
 
-   ![Zoom app definition](images/ZoomAppDefinition.png "Zoom App Definition")
+5. Expand the **View JWT Token** section, set **Expire in:** to 'Other' and define your desired expiration date.
 
-5. **Copy** the Client ID and Client Secret
+6. Copy the JWT Token
 
-   ![Copy client secret](images/ZoomAppCredentials.png "Application ID and Secret")
+   ![Copy JWT Token](images/ZoomAppCredentials.png "JWT Token")
 
-6. Navigate to **Scopes** and click **Add Scopes**
-
-   ![Navigate to Zoom Scopes](images/NavigateToZoomScopes.png "Navigate to Zoom Scopes")
-
-7. Click **Meetings**, select **View and manage all user meetings** and click **Done**
-
-   ![Zoom permissions](images/ConfigureZoomAppScopes.png "ConfigureZoomAppScopes")   
 
 ### Configure Genesys Cloud
 
@@ -111,11 +104,9 @@ To enable communication from Genesys Cloud to Zoom, you must add a web services 
 
    ![Credentials configuration](images/1CConfigurationCredentials.png "Configure credentials for web services data action")
 
-4. For **User Defined (OAuth)** credential type, add the following five fields, enter the required values, and then click **OK**:
+4. Select **User Defined** credential type, add the following field, enter the required values, and then click **OK**:
 
-* A: Set the client_id to the Application (client) ID from your Zoom app.
-* B: Set the client_secret to the Client Secret from your Zoom app.
-* C: Set the grant_type to client_credentials.
+* A: Set the token to the JWT Token from your Zoom app.
 
    ![Configure credential fields and values](images/1DFieldsandValues.png "Select credential type and add field names and values")
 
@@ -214,7 +205,7 @@ To enable the **Send SMS** button which sends the Zoom video session URL to the 
 ### Import Create Zoom video meeting data action
 The Create Zoom Video Meeting data action uses the authenticated token supplied by other data actions to request a new Zoom video meeting URL.
 
-1. Download the *Create-Zoom-Meeting.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/MyPureCloud/zoom-zoom-blueprint "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
+1. Download the *Create-Zoom-Meeting.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
 
 2. Navigate to **Integrations** > **Actions** and click **Import**.
 
@@ -227,7 +218,7 @@ The Create Zoom Video Meeting data action uses the authenticated token supplied 
 ### Send SMS data action
 This data action creates and sends an SMS message that contains the Zoom video meeting URL to the customer. The Create Zoom Video Meeting data action that you configured creates the URL.
 
-1. Download the *Send-SMS.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/MyPureCloud/zoom-zoom-blueprint "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
+1. Download the *Send-SMS.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
 2. Navigate to **Integrations** > **Actions** and click **Import**.
 
    ![Import the data action](images/4AImportDataActions.png "Import the data action")
@@ -239,7 +230,7 @@ This data action creates and sends an SMS message that contains the Zoom video m
 ### Import and publish the script
 You need to import the script *Send-SMS-with-Zoom-Video-URL.script* that references the created data actions. The script generates the **Escalate to Zoom** button for agents during an active interaction with the customer. It also sends an SMS that contains the Zoom video URL to the customer.
 
-1. Download the *Send-SMS-with-Zoom-Video-URL.script* file from the [zoom-zoom-blueprint repo](https://github.com/MyPureCloud/zoom-zoom-blueprint "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.  
+1. Download the *Send-SMS-with-Zoom-Video-URL.script* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.  
 
 2. Navigate to **Admin** > **Contact Center** > **Scripts** and click **Import**.
 
