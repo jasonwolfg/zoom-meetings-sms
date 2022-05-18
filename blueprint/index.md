@@ -266,15 +266,9 @@ You need to import the script *Send-SMS-with-Zoom-Video-URL.script* that referen
   **Note:** The variable value in the example below will create a Zoom meeting through the agent's Zoom account.  For this to work, the agent's Genesys Cloud email address must match their Zoom email address.  If you'd like to use the same Zoom account to create the Zoom meeting regardless of which agent is on the interaction, you can define a static value here.  It can be either the email address or object ID of a person in the Zoom Activity Directory where your app is registered.
   :::
 
-  ![Map First Data Action Input Variable](images/mapFirstDataActionDefineUserInputVariable.png "Map First Data Action Input Variable")
+10. Expand the Output variables for the First Data Action to map the url variables
 
-10. Define static values for the remaining input variables.
-
-  :::primary
-  **Note:** Using the values in this example will create ISO-8601 formatted timestamps.  The startTime and endTime parameters can be the same and it can occur in the past.  If you would like to define your own static timestamps for these variables, you are welcome to do so.
-  :::
-
-  ![Define Static Input Variables](images/mapFirstDataActionDefineInputVariables.png "Define Static Input Variables")
+  ![Expand Output Variables](images/mapFirstDataActionExpandOutputVariables.png "Expand Output Variables")
 
 11. Expand the second data action.
 
@@ -346,7 +340,7 @@ You can test the Send SMS data action within the data action.
 
 ## Additional resources
 
-- [Create onlineMeeting](https://docs.zoom.com/en-us/graph/api/application-post-onlinemeetings?view=graph-rest-1.0&tabs=javascript "Opens the Zoom documentation") in the Zoom API Reference
+- [Create a Zoom Meeting](https://marketplace.zoom.us/docs/api-reference/zoom-api/methods#operation/meetingCreate "Opens the Zoom documentation") in the Zoom API Reference
 - [Purchase SMS long code numbers](https://help.mypurecloud.com/articles/purchase-sms-long-code-numbers/) in Genesys Cloud Help
 - [About Scripting](https://help.mypurecloud.com/?p=54284 "Opens the Scripting overview article") in the Genesys Cloud Resource Center
 - [Agentless SMS Notifications](https://developer.mypurecloud.com/api/tutorials/agentless-sms-notifications/index.html?language=java&step=1 "Opens the SMS tutorial") in the Genesys Cloud Developer Center
