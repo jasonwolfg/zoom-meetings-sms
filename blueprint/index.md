@@ -205,7 +205,7 @@ To enable the **Send SMS** button which sends the Zoom video session URL to the 
 ### Import Create Zoom video meeting data action
 The Create Zoom Video Meeting data action uses the authenticated token supplied by other data actions to request a new Zoom video meeting URL.
 
-1. Download the *Create-Zoom-Meeting.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
+1. Download the *Create-Zoom-Meeting.custom.json* file from the [zoom-meetings-sms repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
 
 2. Navigate to **Integrations** > **Actions** and click **Import**.
 
@@ -218,7 +218,7 @@ The Create Zoom Video Meeting data action uses the authenticated token supplied 
 ### Send SMS data action
 This data action creates and sends an SMS message that contains the Zoom video meeting URL to the customer. The Create Zoom Video Meeting data action that you configured creates the URL.
 
-1. Download the *Send-SMS.custom.json* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
+1. Download the *Send-SMS.custom.json* file from the [zoom-meetings-sms repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file in your local desktop to import it into Genesys Cloud.
 2. Navigate to **Integrations** > **Actions** and click **Import**.
 
    ![Import the data action](images/4AImportDataActions.png "Import the data action")
@@ -230,7 +230,7 @@ This data action creates and sends an SMS message that contains the Zoom video m
 ### Import and publish the script
 You need to import the script *Send-SMS-with-Zoom-Video-URL.script* that references the created data actions. The script generates the **Escalate to Zoom** button for agents during an active interaction with the customer. It also sends an SMS that contains the Zoom video URL to the customer.
 
-1. Download the *Send-SMS-with-Zoom-Video-URL.script* file from the [zoom-zoom-blueprint repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.  
+1. Download the *Send-SMS-with-Zoom-Video-URL.script* file from the [zoom-meetings-sms repo](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the GitHub repo") GitHub repository. Save this file to your local desktop to import it into Genesys Cloud.  
 
 2. Navigate to **Admin** > **Contact Center** > **Scripts** and click **Import**.
 
