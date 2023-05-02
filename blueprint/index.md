@@ -77,7 +77,7 @@ You can enable an agent to create a Zoom meeting from their Genesys Cloud agent 
 Register your custom application in Zoom to enable Genesys Cloud to authenticate and retrieve user information from the Zoom API.
 
 1. Log in to Zoom App Marketplace.
-2. Click **Develop** and select **Build App** from the drop-down menu.
+2. From the drop-down menu, Select **Develop** and click **Build App** .
 
 ![New registration for a Zoom app](images/ZoomBuildApp.png "Build Zoom App")
 
@@ -86,7 +86,7 @@ Register your custom application in Zoom to enable Genesys Cloud to authenticate
 ![Select JWT](images/ZoomSelectJWT.png "Select JWT")
 
 4. Name your app, select the type of app, turn off publishing in the Zoom App Marketplace, then click **Create**.
-5. Click **View JWT Token** drop-down menu.
+5. From the drop-down menu, select **View JWT Token** .
 6. In the **Expiration Time** section, set **Expire in:** to **Other** and enter an expiration date.
 7. Click **Copy**.
 
