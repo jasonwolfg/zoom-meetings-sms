@@ -27,7 +27,7 @@ The following is an example of the end-to-end experience customers and agent can
 
 ![Overview](images/ZoomVideoSMSBlueprint.gif "Overview")
 
-You can enable an agent to create a Zoom meeting from their Genesys Cloud agent  UI. This is done by using the public APIs provided by Genesys Cloud and Zoom. The following illustration shows the Genesys Cloud and Zoom API calls.
+You can enable an agent to create a Zoom meeting from their Genesys Cloud agent UI. This is done by using the public APIs provided by Genesys Cloud and Zoom. The following illustration shows the Genesys Cloud and Zoom API calls.
 
 ![Zoom integration](images/zoom-architect.png "The API calls between Genesys Cloud and Zoom API")
 
