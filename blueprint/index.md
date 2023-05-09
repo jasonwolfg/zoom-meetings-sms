@@ -6,7 +6,7 @@ icon: blueprint
 image: images/6COpenScriptDropdown.png
 category: 6
 summary: |
-The Genesys Cloud Developer Blueprint describes how agents can schedule meetings with customers using Zoom and Genesys Cloud. Genesys Cloud sends an SMS message to the customer with a meeting URL and opens Zoom for the agent. Calls in a queue can be inbound or outbound as long as they are in a queue.
+This Genesys Cloud Developer Blueprint describes how agents can schedule meetings with customers using Zoom and Genesys Cloud. Genesys Cloud sends an SMS message to the customer with a meeting URL and opens Zoom for the agent. Calls in a queue can be inbound or outbound as long as they are in a queue.
 ---
 
 :::{"alert":"primary","title":"About Genesys Cloud Blueprints","autoCollapse":false} 
@@ -17,7 +17,7 @@ For more details on Genesys Cloud blueprint support and practices,
 see our Genesys Cloud blueprint [FAQ](https://developer.genesys.cloud/blueprints/faq "Opens the Genesys Cloud Blueprint FAQ page") sheet.
 :::
 
-The Genesys Cloud Developer Blueprint describes how agents can schedule meetings with customers using Zoom and Genesys Cloud. Genesys Cloud sends an SMS message to the customer with a meeting URL and opens Zoom for the agent. Calls in a queue can be inbound or outbound as long as they are in a queue.
+This Genesys Cloud Developer Blueprint describes how agents can schedule meetings with customers using Zoom and Genesys Cloud. Genesys Cloud sends an SMS message to the customer with a meeting URL and opens Zoom for the agent. Calls in a queue can be inbound or outbound as long as they are in a queue.
 
 The following illustration shows the meeting scheduling solution from an agent's perspective.
 
@@ -128,7 +128,7 @@ The authentication data action is imported into a different data action. Genesys
 ![Custom Auth data action associated with web services data action integration](images/1ECustomAuthDataAction.png "Open the custom auth data action associated with web services data action")
 
 10. Click **Viewing** at the bottom of the Custom Auth data action page to change the data action state from **Published** to **Draft**.
-11. From the [zoom-meetings-sms-blueprint](https://github.com/jasonwolfg/zoom-meetings-sms "Opens the zoom meetings sms") in the GitHub repository, download the auth data action file *Zoom-SMS-Video-Send-Web-Services-Data-Action-Auth.customAuth.json*. You can import this file into Genesys Cloud by saving it to your local desktop.
+11. From the [zoom-meetings-sms-blueprint](https://github.com/GenesysCloudBlueprints/zoom-meetings-sms-blueprint "Opens the zoom meetings sms") in the GitHub repository, download the auth data action file *Zoom-SMS-Video-Send-Web-Services-Data-Action-Auth.customAuth.json*. You can import this file into Genesys Cloud by saving it to your local desktop.
 12. Click **Import** and select the downloaded file from the browse box location.
 
 ![Import authentication data action file](images/1FOpenCustomAuthDataAction.png "Import the custom authentication data action file")
